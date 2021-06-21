@@ -27,7 +27,7 @@ Run the flask server from the root directory of this project.
 `flask run`
 
 **If `flask run` doesn't work, try updating the python path:**
-`export PYTHONPATH=\`pwd\``
+```export PYTHONPATH=\`pwd\````
 
 Try submitting a post request on your local machine:
 `curl -X POST http://127.0.0.1:5000/test --data '{"string_to_cut": "iamyourlyftdriver"}' -H 'Content-Type: application/json'`
