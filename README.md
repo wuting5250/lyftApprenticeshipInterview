@@ -28,7 +28,7 @@ Run the flask server from the root directory of this project.
 
 **If `flask run` doesn't work, try updating the python path:**
 ```
-export PYTHONPATH=\`pwd\`
+export PYTHONPATH=`pwd`
 ```
 
 Try submitting a post request on your local machine:
