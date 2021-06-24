@@ -8,28 +8,28 @@ class FakeRequest:
         return self.jsonRequest
 
 def testSplitValidString():
-    request = FakeRequest({"string_to_split": "12a34b56cno"})
+    request = FakeRequest({"string_to_cut": "12a34b56cno"})
     response = splitString(request)
     assert(isinstance(response, dict))
     assert(response.get("return_string") is not None)
     assert(response.get("return_string") == "abc")
 
 def testSplitValidShortString():
-    request = FakeRequest({"string_to_split": "ab"})
+    request = FakeRequest({"string_to_cut": "ab"})
     response = splitString(request)
     assert(isinstance(response, dict))
     assert(response.get("return_string") is not None)
     assert(response.get("return_string") == "")
 
 def testSplitEmptyString():
-    request = FakeRequest({"string_to_split": ""})
+    request = FakeRequest({"string_to_cut": ""})
     response = splitString(request)
     assert(isinstance(response, dict))
     assert(response.get("return_string") is not None)
     assert(response.get("return_string") == "")
 
 def testSplitBadRequest():
-    request = FakeRequest({"string_to_split": 1})
+    request = FakeRequest({"string_to_cut": 1})
     response = splitString(request)
     assert(not isinstance(response, dict))
     assert(response[0] == "bad request")
