@@ -1,7 +1,7 @@
 # Simple Test POST API
 
 ## Description:
-Send a POST request to the server with a JSON object in the body. The key for the JSON object is "string_to_split". The value is any valid string, including empty strings. If the request contains invalid JSON, does not include the required string_to_cut key, or does not contain a string value, a 400 Bad Request response will be returned. Otherwise, a response with a JSON body will be returned. The response will contain the key "return_string" and a string value containing every third character of the string to split.
+Send a POST request to the server with a JSON object in the body. The key for the JSON object is "string_to_split". The value is any valid string, including empty strings. If the request contains invalid JSON, does not include the required string_to_cut key, or does not contain a string value, a 400 Bad Request response will be returned. Otherwise, a response with a JSON body will be returned. The response will contain the key "return_string" and a string value containing every third character of the string to cut.
 
 ### Setup
 You should have at least Python3.7. These instructions are for Linux or Mac.
